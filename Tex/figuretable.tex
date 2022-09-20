@@ -1,0 +1,16 @@
+\intobmk*{\cleardoublepage}{图表目录}
+\thispagestyle{noheaderstyle}
+{
+\renewcommand*{\addvspace}[1]{}
+\let\oldnumberline\numberline%
+\renewcommand{\numberline}{\figurename~\oldnumberline}%
+\listoffigures%
+}
+{
+\let\cleardoublepage\relax
+\let\clearpage\relax
+\renewcommand*{\addvspace}[1]{}
+\let\oldnumberline\numberline%
+\renewcommand{\numberline}{\tablename~\oldnumberline}%
+\listoftables%
+}
